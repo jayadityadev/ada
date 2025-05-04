@@ -1,0 +1,12 @@
+Enter the number of nodes: 4
+Enter the Adjacency Matrix (0 or 1):
+0 1 0 0
+0 0 0 1
+0 0 0 0
+1 0 1 0
+
+The Transitive Closure (Path Matrix) is:
+1 1 1 1 
+1 1 1 1 
+0 0 0 0 
+1 1 1 1 

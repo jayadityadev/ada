@@ -6,7 +6,6 @@
 int n, a[100], x[100], total, sol_no = 0;
 
 void sumOfSubset(int sum, int k, int rem) {
-    // Include a[k]
     x[k] = 1;
     if (sum + a[k] == total) {
         printf("Solution #%d:\t", ++sol_no);
@@ -17,7 +16,6 @@ void sumOfSubset(int sum, int k, int rem) {
         sumOfSubset(sum + a[k], k + 1, rem - a[k]);
     }
 
-    // Exclude a[k]
     if ((sum + rem - a[k] >= total) && (sum + a[k + 1] <= total)) {
         x[k] = 0;
         sumOfSubset(sum, k + 1, rem - a[k]);

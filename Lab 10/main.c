@@ -6,14 +6,12 @@
 
 #define MAX_SIZE 500000
 
-// Swap two integers
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
-// Partition the array using Lomuto scheme
 int partition(int arr[], int low, int high) {
     int pivot = arr[low];
     int i = low, j = high + 1;
@@ -28,7 +26,6 @@ int partition(int arr[], int low, int high) {
     return j;
 }
 
-// QuickSort implementation
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
         int pivotIndex = partition(arr, low, high);
@@ -37,14 +34,12 @@ void quickSort(int arr[], int low, int high) {
     }
 }
 
-// Generate random array input
 void generateRandomInput(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         arr[i] = rand() % 10000;
     }
 }
 
-// Display array
 void displayArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%5d\n", arr[i]);
@@ -56,7 +51,7 @@ int main() {
     clock_t start, end;
     double timeTaken;
 
-    srand((unsigned int)time(NULL));  // Seed RNG
+    srand((unsigned int)time(NULL));
 
     while (1) {
         printf("\n1. Plot the Graph\n2. Perform QuickSort\n3. Exit\n");
@@ -94,18 +89,15 @@ int main() {
                 }
 
                 generateRandomInput(arr, n);
+                
                 printf("\nUnsorted Array:\n");
                 displayArray(arr, n);
 
-                // start = clock();
                 quickSort(arr, 0, n - 1);
-                // end = clock();
 
                 printf("\nSorted Array:\n");
                 displayArray(arr, n);
 
-                // timeTaken = (double)(end - start) / CLOCKS_PER_SEC;
-                // printf("\nTime complexity of the algorithm = %lf seconds\n", timeTaken);
                 break;
             }
 

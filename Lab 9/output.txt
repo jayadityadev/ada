@@ -1,0 +1,42 @@
+1. Plot the Graph
+2. Perform Selection Sort
+3. Exit
+Enter your choice: 1
+
+Data file <sPlot.dat> generated. Use a plotting utility to view the graph.
+
+1. Plot the Graph
+2. Perform Selection Sort
+3. Exit
+Enter your choice: 2
+Enter the number of elements to sort: 10
+
+Unsorted Array:
+ 2626
+ 5945
+ 9131
+ 3290
+ 9587
+ 5022
+ 2350
+  732
+  387
+ 9634
+
+Sorted Array:
+  387
+  732
+ 2350
+ 2626
+ 3290
+ 5022
+ 5945
+ 9131
+ 9587
+ 9634
+
+1. Plot the Graph
+2. Perform Selection Sort
+3. Exit
+Enter your choice: 3
+Exiting program.

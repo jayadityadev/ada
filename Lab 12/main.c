@@ -1,16 +1,15 @@
 // Design and implement C/C++ Program for N Queen's problem using Backtracking.
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 #define MAX 20
 
 int board[MAX], count = 0;
 
-// Check if the queen placement is valid
 int isSafe(int row, int col) {
     for (int prevRow = 1; prevRow < row; prevRow++) {
-        // Check same column or diagonal attacks
         if (board[prevRow] == col || abs(board[prevRow] - col) == abs(prevRow - row)) {
             return 0;
         }
@@ -18,7 +17,6 @@ int isSafe(int row, int col) {
     return 1;
 }
 
-// Print the board configuration
 void printSolution(int n) {
     printf("Solution %d:\n", ++count);
     for (int i = 1; i <= n; i++) {
@@ -33,7 +31,6 @@ void printSolution(int n) {
     printf("\n");
 }
 
-// Recursive function to place queens
 void solveNQueens(int row, int n) {
     if (row > n) {
         printSolution(n);
@@ -42,9 +39,8 @@ void solveNQueens(int row, int n) {
 
     for (int col = 1; col <= n; col++) {
         if (isSafe(row, col)) {
-            board[row] = col;  // Place queen
-            solveNQueens(row + 1, n);  // Recur for next row
-            // No need to undo board[row] since it will be overwritten
+            board[row] = col;
+            solveNQueens(row + 1, n); 
         }
     }
 }

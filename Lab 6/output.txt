@@ -1,0 +1,13 @@
+Enter the number of items: 3
+Enter the weights of each item: 4 7 3
+Enter the profits of each item: 20 15 30
+Enter the capacity of knapsack: 10
+
+Dynamic Programming Table:
+0       0       0       0       0       0       0       0       0       0       0
+0       0       0       0       20      20      20      20      20      20      20
+0       0       0       0       20      20      20      20      20      20      20
+0       0       0       30      30      30      30      50      50      50      50
+
+The optimal solution value is: 50
+Items selected (by index): 1 3 

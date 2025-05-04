@@ -9,7 +9,6 @@ int max(int a, int b) {
     return (a > b) ? a : b;
 }
 
-// Fills the value table and returns optimal value
 int knapsack(int n, int m, int cost[], int weight[]) {
     int i, j;
     for (i = 0; i <= n; i++) {
@@ -25,10 +24,9 @@ int knapsack(int n, int m, int cost[], int weight[]) {
     return value[n][m];
 }
 
-// Traces which items were included in optimal solution
 void findSolution(int n, int m, int weight[]) {
     int i = n, j = m;
-    int x[MAX] = {0};  // Initialize with 0s
+    int x[MAX] = {0};
 
     while (i > 0 && j > 0) {
         if (value[i][j] != value[i-1][j]) {
@@ -66,7 +64,7 @@ int main() {
 
     int optiVal = knapsack(n, m, cost, weight);
 
-    printf("\nDP Table (value[i][j]):\n");
+    printf("\nDynamic Programming Table:\n");
     for (i = 0; i <= n; i++) {
         for (j = 0; j <= m; j++)
             printf("%d\t", value[i][j]);

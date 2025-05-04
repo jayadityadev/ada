@@ -1,0 +1,44 @@
+1. Plot the Graph
+2. Perform QuickSort
+3. Exit
+Enter your choice: 1
+
+Data file <qPlot.dat> generated. Use a plotting utility to view the graph.
+
+1. Plot the Graph
+2. Perform QuickSort
+3. Exit
+Enter your choice: 2
+Enter the number of elements to sort: 10
+
+Unsorted Array:
+ 4453
+ 4937
+ 2626
+ 9409
+ 4035
+ 4903
+ 4475
+ 7542
+ 9641
+ 2674
+
+Sorted Array:
+ 2626
+ 2674
+ 4035
+ 4453
+ 4475
+ 4903
+ 4937
+ 7542
+ 9409
+ 9641
+
+Time complexity of the algorithm = 0.000002 seconds
+
+1. Plot the Graph
+2. Perform QuickSort
+3. Exit
+Enter your choice: 3
+Exiting program.

@@ -1,0 +1,44 @@
+1. Plot the Graph
+2. Perform MergeSort
+3. Exit
+Enter your choice: 1
+
+Data file <mergePlot.dat> generated. Use a plotting utility to visualize it.
+
+1. Plot the Graph
+2. Perform MergeSort
+3. Exit
+Enter your choice: 2
+Enter the number of elements to sort: 10
+
+Unsorted Array:
+   899
+  9669
+  1248
+  6831
+  2343
+  4004
+  6882
+  1061
+  1665
+  2627
+
+Sorted Array:
+   899
+  1061
+  1248
+  1665
+  2343
+  2627
+  4004
+  6831
+  6882
+  9669
+
+Time complexity of the algorithm = 0.000003 seconds
+
+1. Plot the Graph
+2. Perform MergeSort
+3. Exit
+Enter your choice: 3
+Exiting program.

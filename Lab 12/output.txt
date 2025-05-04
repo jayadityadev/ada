@@ -1,0 +1,15 @@
+Enter the value of N (number of queens): 4
+
+Solutions to 4-Queens Problem:
+
+Solution 1:
+ .  Q  .  . 
+ .  .  .  Q 
+ Q  .  .  . 
+ .  .  Q  . 
+
+Solution 2:
+ .  .  Q  . 
+ Q  .  .  . 
+ .  .  .  Q 
+ .  Q  .  . 

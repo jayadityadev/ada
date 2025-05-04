@@ -1,0 +1,7 @@
+Enter the number of elements: 5
+Enter the elements: 5 3 1 2 6
+Enter the sum total to be computed: 8
+The possible combinations are:
+Solution #1:    5       3
+Solution #2:    5       1       2
+Solution #3:    2       6

@@ -11,7 +11,6 @@
 
 #define MAX_SIZE 500000
 
-// Function to perform Selection Sort
 void selectionSort(int arr[], int n) {
     int i, j, minIndex, temp;
     for (i = 0; i < n - 1; i++) {
@@ -27,14 +26,12 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-// Function to generate random input array
 void generateRandomInput(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         arr[i] = rand() % 10000;
     }
 }
 
-// Function to display the array
 void displayArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%5d\n", arr[i]);
@@ -48,7 +45,7 @@ int main() {
     clock_t start, end;
     double timeTaken;
 
-    srand((unsigned int)time(NULL));  // Seed RNG
+    srand((unsigned int)time(NULL));
 
     while (1) {
         printf("\n1. Plot the Graph\n2. Perform Selection Sort\n3. Exit\n");

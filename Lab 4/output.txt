@@ -1,0 +1,12 @@
+Enter the number of nodes: 4
+Enter the Cost Adjacency Matrix (4 x 4):
+1   999 3   999
+2   0   999 999
+999 7   0   1
+6   999 999 0
+Enter the source node (1 to 4): 1
+
+Shortest Paths from source node 1:
+To 2 (Cost: 10): 1 -> 3 -> 2
+To 3 (Cost: 3): 1 -> 3
+To 4 (Cost: 4): 1 -> 3 -> 4

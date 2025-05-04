@@ -7,13 +7,13 @@
 typedef struct {
     int profit;
     int weight;
-    float ratio;     // profit-to-weight ratio
-    float fraction;  // fraction of item taken
+    float ratio;
+    float fraction;
 } Item;
 
 Item* items;
-int n;           // number of items
-float capacity;  // total knapsack capacity
+int n;
+float capacity;
 
 void inputItems() {
     printf("Enter number of items: ");

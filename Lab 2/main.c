@@ -52,7 +52,7 @@ int main() {
 
     printf("Enter the root node (1 to %d): ", n);
     scanf("%d", &source);
-    source--; // Adjust for 0-based index
+    source--;
 
     for (int i = 0; i < n; i++)
         visited[i] = 0;

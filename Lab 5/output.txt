@@ -1,0 +1,9 @@
+Enter the number of nodes: 4
+Enter the Adjacency Matrix:
+0 1 0 1
+0 0 1 1
+0 0 0 1
+0 0 0 0
+
+Topological Sort Order:
+1 2 3 4

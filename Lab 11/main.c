@@ -6,9 +6,8 @@
 
 #define MAX_SIZE 500000
 
-int temp[MAX_SIZE]; // Temporary array for merging
+int temp[MAX_SIZE];
 
-// Merge two sorted subarrays
 void merge(int a[], int low, int mid, int high) {
     int i = low, j = mid + 1, k = low;
 
@@ -30,7 +29,6 @@ void merge(int a[], int low, int mid, int high) {
         a[t] = temp[t];
 }
 
-// MergeSort implementation
 void mergeSort(int a[], int low, int high) {
     if (low < high) {
         int mid = (low + high) / 2;
@@ -40,14 +38,12 @@ void mergeSort(int a[], int low, int high) {
     }
 }
 
-// Generate random input
 void generateRandomInput(int a[], int n) {
     for (int i = 0; i < n; i++) {
         a[i] = rand() % 10000;
     }
 }
 
-// Display the array
 void displayArray(int a[], int n) {
     for (int i = 0; i < n; i++) {
         printf(" %5d\n", a[i]);
@@ -59,7 +55,7 @@ int main() {
     clock_t start, end;
     double timeTaken;
 
-    srand((unsigned int)time(NULL)); // Seed RNG
+    srand((unsigned int)time(NULL));
 
     while (1) {
         printf("\n1. Plot the Graph\n2. Perform MergeSort\n3. Exit\n");
