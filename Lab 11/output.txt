@@ -12,28 +12,28 @@ Enter your choice: 2
 Enter the number of elements to sort: 10
 
 Unsorted Array:
-   899
-  9669
-  1248
-  6831
-  2343
-  4004
-  6882
-  1061
-  1665
-  2627
+  5759
+  6543
+  8025
+  5235
+  3118
+  4076
+  9096
+  3872
+   623
+  8896
 
 Sorted Array:
-   899
-  1061
-  1248
-  1665
-  2343
-  2627
-  4004
-  6831
-  6882
-  9669
+   623
+  3118
+  3872
+  4076
+  5235
+  5759
+  6543
+  8025
+  8896
+  9096
 
 Time complexity of the algorithm = 0.000003 seconds
 

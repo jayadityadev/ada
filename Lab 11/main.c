@@ -70,7 +70,7 @@ int main() {
                     exit(EXIT_FAILURE);
                 }
 
-                for (int size = 5000; size <= 100000; size += 1000) {
+                for (int size = 5000; size <= 50000; size += 1000) {
                     generateRandomInput(a, size);
                     start = clock();
                     mergeSort(a, 0, size - 1);
